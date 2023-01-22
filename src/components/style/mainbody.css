@@ -1,0 +1,28 @@
+.logo-container{
+    width: 80px;
+    height: 80px;
+}
+
+.logo-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.data-container,
+.mainbody-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.field-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.loader{
+    font-size: 60px;
+    text-align: center;
+}

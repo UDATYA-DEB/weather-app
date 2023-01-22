@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://storage.cloudconvert.com/tasks/d372fa50-802e-4026-8435-4da91abb600e/image.webp?AWSAccessKeyId=cloudconvert-production&Expires=1674472802&Signature=HSHsu1KzO5d4fQxVj%2Fv3bvVg1LY%3D&response-content-disposition=inline%3B%20filename%3D%22image.webp%22&response-content-type=image%2Fwebp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
