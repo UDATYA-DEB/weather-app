@@ -34,7 +34,7 @@ const MainBody = () => {
   return (
     <div className='mainbody-container'>
         <div className='field-container'>
-            <input type="text" name='locator' value={city} onChange={(e)=>setCity(e.target.value)}/>
+            <input type="text" name='locator' value={city} onChange={(e)=>setCity(e.target.value)} autoComplete="off"/>
             <button className="btn" onClick={fetchData}>Search</button>
         </div>
         {data.map((element)=>{
