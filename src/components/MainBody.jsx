@@ -1,14 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import './style/mainbody.css'
 
 const MainBody = () => {
-    const [city, setCity] = useState()
+    //const [city, setCity] = useState()
     const [loader, setLoader] = useState(false)
     const [data, setData] = useState([])
     const api_key = 'f211b629800040318f2110618232201'
+    const refCity = useRef(null)
 
     const handleRequest = async()=>{
-        const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${api_key}&q=${city}&aqi=yes`)
+        const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${api_key}&q=${refCity.current.value}&aqi=yes`)
         if (response.status === 400){
             alert('Enter valid City Name.')
         }
@@ -34,7 +35,7 @@ const MainBody = () => {
   return (
     <div className='mainbody-container'>
         <div className='field-container'>
-            <input type="text" name='locator' value={city} onChange={(e)=>setCity(e.target.value)} autoComplete="off"/>
+            <input type="text" name='locator' ref={refCity} autoComplete="off"/>
             <button className="btn" onClick={fetchData}>Search</button>
         </div>
         {data.map((element)=>{
